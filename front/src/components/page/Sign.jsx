@@ -15,8 +15,13 @@ const Sign = () => {
               <input type="password" id="password" />
             </div>
             <div className="input-remember">
-              <input type="checkbox" id="remember-me" />
-              <label htmlFor="remember-me">Remember me</label>
+              <div className="input-remember-check">
+                <input type="checkbox" id="remember-me" />
+                <label htmlFor="remember-me">Remember me</label>
+              </div>
+              <button className="sign-in-button" type="submit">
+                Sign In
+              </button>
             </div>
           </form>
         </section>
