@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
 import Accueil from "./components/page/Accueil";
 import Sign from "./components/page/Sign";
+import UserAccount from "./components/page/UserAccount";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Accueil />} />
-        <Route path="/user" element={<Sign />} />
+        <Route path="/User" element={<Sign />} />
+        <Route path="/User/Account" element={<UserAccount />} />
       </Routes>
       <Footer />
     </BrowserRouter>

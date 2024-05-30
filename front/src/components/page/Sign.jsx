@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Sign = () => {
   return (
     <div className="body-sign-in">
@@ -19,9 +21,9 @@ const Sign = () => {
                 <input type="checkbox" id="remember-me" />
                 <label htmlFor="remember-me">Remember me</label>
               </div>
-              <button className="sign-in-button" type="submit">
+              <Link className="sign-in-button" to="./Account" type="submit">
                 Sign In
-              </button>
+              </Link>
             </div>
           </form>
         </section>

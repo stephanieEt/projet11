@@ -7,7 +7,8 @@ html {
 }
 
 body,
-.body-sign-in {
+.body-sign-in,
+.body-user {
   margin: 0;
   display: flex;
   flex-direction: column;
