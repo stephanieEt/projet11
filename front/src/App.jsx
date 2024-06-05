@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
 import Accueil from "./components/page/Accueil";
 import Sign from "./components/page/Sign";
-import UserAccount from "./components/page/UserAccount";
+import UserAccount from "./components/page/User";
 import Error from "./components/page/Error";
 
 function App() {
