@@ -1,25 +1,22 @@
-import Footer from "./components/Footer/Footer";
-import Header from "/src/components/Header/Header";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import SignIn from "./pages/SignIn";
+import User from "./pages/UserAccount";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React from "react";
-import Accueil from "./components/page/Accueil";
-import Sign from "./components/page/Sign";
-import UserAccount from "./components/page/User";
-import Error from "./components/page/Error";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Accueil />} />
-        <Route path="/User" element={<Sign />} />
-        <Route path="/User/Account" element={<UserAccount />} />
-        <Route path="*" element={<Error />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/SignIn" element={<SignIn />} />
+        <Route path="/User" element={<User />} />
       </Routes>
       <Footer />
     </BrowserRouter>
   );
-}
+};
 
 export default App;
