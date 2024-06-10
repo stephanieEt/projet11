@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { logout } from "../redux/authentification";
-import logo from "../assets/images/argentBankLogo.png";
+import logo from "../assets/images/argentBankLogo.webp";
 
 function Header() {
   const user = useSelector((state) => state.userProfile.user);
