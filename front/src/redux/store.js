@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import tokenReducer from "./authentification";
+import tokenReducer from "./TokenSlice";
 import userProfileReducer from "./UserProfileSlice";
 import updateUserProfileReducer from "./UpdateUserProfileSlice";
 

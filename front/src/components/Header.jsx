@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { logout } from "../redux/authentification";
+import { logout } from "../redux/TokenSlice";
 import logo from "../assets/images/argentBankLogo.webp";
 
 function Header() {

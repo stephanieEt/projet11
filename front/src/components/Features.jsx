@@ -1,4 +1,3 @@
-import React from "react";
 import PropTypes from "prop-types";
 
 const Features = ({ imgSrc, imgAlt, title, text }) => {
