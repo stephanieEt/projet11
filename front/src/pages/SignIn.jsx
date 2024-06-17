@@ -45,10 +45,10 @@ const SignIn = () => {
           <h1>Sign In</h1>
           <form onSubmit={handleLoginEvent}>
             <div className="input-wrapper">
-              <label htmlFor="username">Username</label>
+              <label htmlFor="Email">Email</label>
               <input
                 type="text"
-                id="username"
+                id="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
