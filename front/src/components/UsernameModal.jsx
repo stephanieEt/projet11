@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { updateUserName } from "../redux/UpdateUserProfileSlice";
 import { fetchUserProfile } from "../redux/UserProfileSlice";
+import PropTypes from "prop-types";
 
 const UsernameModal = ({ isOpen, onClose }) => {
   const dispatch = useDispatch();
@@ -54,5 +55,8 @@ const UsernameModal = ({ isOpen, onClose }) => {
     </div>
   );
 };
-
+UsernameModal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.string.isRequired,
+};
 export default UsernameModal;
