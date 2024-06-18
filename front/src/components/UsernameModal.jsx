@@ -23,7 +23,7 @@ const UsernameModal = ({ isOpen, onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (newUserName.trim() === "") {
-      setError("Remplissez le champs Username");
+      setError("Remplissez le champ Username");
       return;
     }
     dispatch(updateUserName(newUserName)).then(() => {
@@ -57,6 +57,6 @@ const UsernameModal = ({ isOpen, onClose }) => {
 };
 UsernameModal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
-  onClose: PropTypes.string.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 export default UsernameModal;
