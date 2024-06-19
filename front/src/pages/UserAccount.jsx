@@ -41,7 +41,11 @@ const User = () => {
             Edit Name
           </button>
         </div>
-        <UsernameModal isOpen={isModalOpen} onClose={handleCloseModal} />
+        <UsernameModal
+          isOpen={isModalOpen}
+          user={user}
+          onClose={handleCloseModal}
+        />
         <h2 className="sr-only">Accounts</h2>
         <Account
           title="Argent Bank Checking (x8349)"

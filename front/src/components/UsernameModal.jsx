@@ -4,7 +4,7 @@ import { updateUserName } from "../redux/UpdateUserProfileSlice";
 import { fetchUserProfile } from "../redux/UserProfileSlice";
 import PropTypes from "prop-types";
 
-const UsernameModal = ({ isOpen, onClose }) => {
+const UsernameModal = ({ isOpen, user, onClose }) => {
   const dispatch = useDispatch();
   const [newUserName, setNewUserName] = useState("");
   const [error, setError] = useState("");
@@ -45,10 +45,20 @@ const UsernameModal = ({ isOpen, onClose }) => {
             New Username:
             <input type="text" value={newUserName} onChange={handleChange} />
           </label>
-          <button type="submit">Save</button>
-          <button type="button" onClick={onClose}>
-            Cancel
-          </button>
+          <label>
+            First name:
+            <input type="text" value={user.firstName} disabled />
+          </label>
+          <label>
+            Last name:
+            <input type="text" value={user.lastName} disabled />
+          </label>
+          <div className="modal-btn">
+            <button type="submit">Save</button>
+            <button type="button" onClick={onClose}>
+              Cancel
+            </button>
+          </div>
           {error && <p style={{ color: "red", marginTop: "10px" }}>{error}</p>}{" "}
         </form>
       </div>
@@ -57,6 +67,7 @@ const UsernameModal = ({ isOpen, onClose }) => {
 };
 UsernameModal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
+  user: PropTypes.object.isRequired,
   onClose: PropTypes.func.isRequired,
 };
 export default UsernameModal;
