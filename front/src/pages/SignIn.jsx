@@ -16,7 +16,7 @@ const SignIn = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
-      navigate("/User");
+      navigate("/Profil");
     }
   }, [navigate]);
 
@@ -31,7 +31,7 @@ const SignIn = () => {
         setEmail("");
         setPassword("");
         dispatch(fetchUserProfile()).then(() => {
-          navigate("/User");
+          navigate("/Profil");
         });
       }
     });

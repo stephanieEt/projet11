@@ -177,6 +177,7 @@ body,
   margin: 0 auto;
   margin-top: 3rem;
   padding: 2rem;
+  height: 310px;
 }
 
 .input-remember {
@@ -315,6 +316,11 @@ body,
 .modal-form {
   height: 165px;
   padding: 5px 0px 15px;
+}
+
+.modal-btn {
+  display: flex;
+  gap: 10px;
 }
 
 .close {
